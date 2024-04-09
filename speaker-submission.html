@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheez</title>
+  <link rel = "stylesheet" href = "styles.css">
+</head>
+<body>
+  <header class = "speaker-form-header">
+   <img src="c2c238b3-d888-49d2-aa66-609e8c9ead27.svg" alt="Cheez">
+    <h1>
+      Cheezy
+    </h1>
+
+    <p>
+      <em>
+        Want to speak at our fake conference? Fill out this form.
+      </em>
+  </p>
+  
+  
+  </header>
+
+  <form action = '' method = 'get' class = 'speaker-form'> 
+
+    <div class = 'form-row'>
+
+      <label for = 'full-name'>Name: </label>
+      <input id = 'full-name' name = 'full-name' type = 'text' />
+    </div>
+
+    <div class = 'form-row'>
+      <label for = 'email'>Email: </label>
+      <input id = 'email' name = 'email' type = 'email' placeholder="pupsmb@example.com" />
+    </div>
+    <div class ='form-row '>
+      <label for = 'age'>Age: </label>
+      <input id = 'age' Age = 'age' type = 'text'/>
+    </div>
+
+    <fieldset class="legacy-form-row">
+      <legend>Mode of Payment</legend>
+
+      <input id="talk-type-1" 
+          name="talk-type" 
+          type="radio" 
+          value="main stage" 
+          checked/>
+          <label for="talk-type-1" class="radio">Cash</label>
+
+      <input id="talk-type-2" 
+          name="talk-type" 
+          type="radio" 
+          value="workshop"/>
+      
+          <label for="talk-type-2" class="radio">GCash</label>
+  </fieldset>
+  <fieldset class="legacy-form-row">
+    <legend>Mode of Eaating </legend>
+
+    <input id="talk-type-1" 
+        name="talk-type" 
+        type="radio" 
+        value="main stage" 
+        checked/>
+        <label for="talk-type-1" class="radio">Dine-in</label>
+
+    <input id="talk-type-2" 
+        name="talk-type" 
+        type="radio" 
+        value="workshop"/>
+    
+        <label for="talk-type-2" class="radio">Take-out</label>
+</fieldset>
+<legend>Type of Cuisine</legend>
+<div id="dropdown">
+  <button class="dropdown-toggle">
+      <span>Menu</span>
+      <i class="fa-solid fa-caaret-down"></i>   
+  </button>
+  <ul class="menu">
+      <li class="menu-item"><a href="#">Italian</a></li>
+      <li class="menu-item"><a href="#">Chinese</a></li>
+      <li class="menu-item dropdown">
+          <a href="#" class="submenu-toggle">
+              <span>Healthy Option</span>
+              <i class="fa-solid fa-caret-right"></i>
+          </a>
+          <ul class="submenu">
+              <li class="submenu-item"><a href="#">Vegetarian</a></li>
+          </ul>
+      </li>
+      <li class="menu-item"><a href="#">Mexican</a></li>
+      <li class="menu-item dropdown">
+          <a href="#" class="submenu-toggle">
+              <span>Specials </span>
+              <i class="fa-solid fa-caret-right"></i>
+          </a>
+          <ul class="submenu">
+
+          </ul>
+      </li> 
+  </ul>
+</div>
+    <div class="form-row">
+      <label for="adstract">Abstract</label>
+      <textarea id="adstract" name="adstract"></textarea>
+      <div class="instrustions">Describe your link in 500 words or less</div>
+    </div>
+    <div class="form-row">
+      <div class="btn">
+        <button>Order Placed</button>
+      <button>Cancel</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
